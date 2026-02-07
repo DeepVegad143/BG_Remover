@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "exec": "node --experimental-modules server.js",
+  "ext": "js,json",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node node_modules/nodemon/bin/nodemon.js server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "form-data": "^4.0.4",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^8.3.0",
+    "multer": "^2.0.2",
+    "serverless-http": "^3.2.0",
+    "sharp": "^0.34.4",
+    "stripe": "^18.5.0",
+    "svix": "^1.75.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
